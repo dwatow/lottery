@@ -1,0 +1,234 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Taiwan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 1\r\n"
+    "#pragma code_page(950)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\lottery.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.cht\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\lottery.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 252, 60
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "關於 Taiwan Lottery Simuator"
+FONT 9, "新細明體"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "樂透電腦選號模擬器  Taiwan Lottery Simuator Version 1.2",
+                    IDC_STATIC,45,10,195,10,SS_NOPREFIX
+    LTEXT           "奇菱科技股份有限公司\n光電研發處    電子研發一課\n技術練習程式    Copyright (C) 2011",
+                    IDC_STATIC,45,25,125,25
+    DEFPUSHBUTTON   "確定",IDOK,190,30,50,14,WS_GROUP
+END
+
+IDD_LOTTERY_DIALOG DIALOGEX 0, 0, 212, 210
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "電腦選號"
+FONT 9, "微軟正黑體"
+BEGIN
+    DEFPUSHBUTTON   "我要中大獎",IDC_BUTTON1,145,165,50,15
+    PUSHBUTTON      "好",IDOK,145,185,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "確定",IDCANCEL,145,185,50,14
+    CTEXT           "10\t10\t10\t10\t10\t10\t10\n20\n30\n40\n50\n60\n70\n80\n90\n100",
+                    IDC_STATIC_BBS,5,5,200,80
+    CONTROL         "大樂透",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,75,95,35,10
+    CONTROL         "威力彩",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,75,125,35,10
+    CONTROL         129,IDC_STATIC,"Static",SS_BITMAP,20,95,50,26
+    CONTROL         130,IDC_STATIC,"Static",SS_BITMAP,20,125,52,23
+    EDITTEXT        IDC_EDIT1,73,165,20,14,ES_AUTOHSCROLL
+    LTEXT           "投注",IDC_STATIC,55,167,16,8
+    LTEXT           "組選號",IDC_STATIC,97,167,25,8
+    LTEXT           "祝你中大獎~中了要請客~",IDC_STATIC_INFO,40,190,90,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "49個號碼中取6個號碼",IDC_STATIC,90,105,77,8
+    LTEXT           "52個號碼中取6個號碼\n再從8個號碼中取1個號碼",IDC_STATIC,
+                    90,135,90,15
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,2,0,0
+ PRODUCTVERSION 1,2,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "奇菱科技股份有限公司\0"
+            VALUE "FileDescription", "樂透電腦選號模擬器\0"
+            VALUE "FileVersion", "1, 2, 0, 0\0"
+            VALUE "InternalName", "Taiwan Lottery Simuator\0"
+            VALUE "LegalCopyright", "Copyright (C) 2011\0"
+            VALUE "LegalTrademarks", "Chi Lin Tech. Co.\0"
+            VALUE "OriginalFilename", "Lottery.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Taiwan Lottery Simuator Application\0"
+            VALUE "ProductVersion", "1, 2, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x404, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 245
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+    END
+
+    IDD_LOTTERY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "lottery.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "wari.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "關於 lottery(&A)..."
+END
+
+#endif    // Chinese (Taiwan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE 4, 1
+#pragma code_page(950)
+#endif //_WIN32
+#include "res\lottery.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.cht\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
